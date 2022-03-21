@@ -11,6 +11,12 @@
       "email": "fewrew@mail.com",
       "password": "Nemezis1706",
       "id": 2
+    },
+    {
+      "name": "Ivan",
+      "email": "cewfwenb@mail.ru",
+      "password": "Nemezis1706",
+      "id": 3
     }
   ],
   "products": [

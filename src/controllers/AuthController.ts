@@ -43,11 +43,9 @@ class AuthController {
 
   async signUp(data: UserData) {
     try {
-      const resp = await this.api.signUp(data)
-      if (resp) {
-        const loginData = { email: data.email, password: data.password }
-        this.login(loginData)
-      }
+      await this.api.signUp(data)
+      const loginData = { email: data.email, password: data.password }
+      this.login(loginData)
     } catch (err) {
       this.errorHandler(err)
     }
