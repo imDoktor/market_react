@@ -31,7 +31,7 @@ class AuthController {
     }
   }
 
-  async getUser(id: string) {
+  async getUser(id: any) {
     try {
       const user = await this.api.getUser(id)
       User.setUserData(user)
