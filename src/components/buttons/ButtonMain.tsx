@@ -34,7 +34,7 @@ const ButtonMainStyled = styled.button<ButtonMainProps>`
       opacity: "0.5",
     }}
 
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     width: 300px;
   }
   @media (max-width: 320px) {

@@ -14,6 +14,11 @@ const TextAreaStyled = styled.textarea<inputProps>`
   font-size: 16px;
   font-weight: 300;
   border-radius: 4px;
+
+  @media (max-width: 1024px) {
+    width: 300px;
+  }
+
   @media (max-width: 480px) {
     width: 100%;
   }

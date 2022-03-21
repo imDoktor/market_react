@@ -13,6 +13,11 @@ const InputDateStyled = styled.input<inputProps>`
   border-radius: 4px;
   font-size: 16px;
   font-weight: 300;
+
+  @media (max-width: 1024px) {
+    width: 300px;
+  }
+
   @media (max-width: 480px) {
     width: 100%;
   }

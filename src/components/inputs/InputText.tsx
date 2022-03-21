@@ -18,6 +18,11 @@ const InputTextStyled = styled.input<inputProps>`
     background-color: #fff;
     box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.45);
   }
+
+  @media (max-width: 1024px) {
+    width: 300px;
+  }
+
   @media (max-width: 480px) {
     width: 100%;
   }

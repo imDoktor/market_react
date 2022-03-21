@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     padding: 0;
   }
 `
@@ -72,6 +72,11 @@ export const Title = styled.h2<TitleProps>`
   font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
+
   @media (max-width: 480px) {
     font-size: 20px;
   }

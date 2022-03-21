@@ -29,6 +29,10 @@ const InputFileStyled = styled.div<inputProps>`
     cursor: pointer;
   }
 
+  @media (max-width: 1024px) {
+    width: 300px;
+  }
+
   @media (max-width: 480px) {
     width: 100%;
   }

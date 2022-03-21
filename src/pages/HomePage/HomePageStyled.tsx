@@ -18,7 +18,7 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;

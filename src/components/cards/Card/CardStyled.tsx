@@ -15,7 +15,7 @@ export const Wrapper = styled.div<WrapperProps>`
   box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.35);
   border-radius: 8px;
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `
@@ -63,7 +63,7 @@ export const Photo = styled.div`
     z-index: 2;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     & img {
       height: 180px;
     }
@@ -82,7 +82,7 @@ export const Description = styled.p`
   font-weight: 400;
   line-clamp: 3;
 
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     height: auto;
   }
 `

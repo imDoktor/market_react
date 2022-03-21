@@ -15,6 +15,11 @@ const SelectStyled = styled.select<inputProps>`
   font-weight: 300;
   border-radius: 4px;
   cursor: pointer;
+
+  @media (max-width: 1024px) {
+    width: 300px;
+  }
+
   @media (max-width: 480px) {
     width: 100%;
   }

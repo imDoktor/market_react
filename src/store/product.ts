@@ -1,4 +1,4 @@
-import { makeAutoObservable } from "mobx"
+import { makeAutoObservable, action } from "mobx"
 
 interface ProductData {
   id: string

@@ -49,7 +49,7 @@ export const Container = styled.div<ContainerProps>`
       margin: "20px 0 0 0",
     }}
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -61,7 +61,8 @@ export const ControlPanel = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  @media (max-width: 480px) {
+
+  @media (max-width: 768px) {
     width: 100%;
   }
 `
