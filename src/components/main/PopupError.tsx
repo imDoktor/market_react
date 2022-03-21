@@ -23,6 +23,7 @@ const Wrapper = styled.div<WrapperProps>`
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
+  z-index: 1000;
 
   ${({ isVisible }) => isVisible && { visibility: "visible", opacity: "1" }}
 `
