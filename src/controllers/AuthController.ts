@@ -23,6 +23,8 @@ class AuthController {
       if (user.password === data.password) {
         User.setUserData(user)
         localStorage.setItem("id", user.id)
+      } else {
+        this.errorHandler("не верный email или пароль")
       }
     } catch (err) {
       this.errorHandler(err)
