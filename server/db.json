@@ -1,22 +1,10 @@
 {
   "users": [
     {
-      "name": "Никита",
-      "email": "denekin.nikita@bk.ru",
-      "password": "Nemezis1706",
-      "id": 1
-    },
-    {
-      "name": "Антон",
-      "email": "fewrew@mail.com",
-      "password": "Nemezis1706",
-      "id": 2
-    },
-    {
       "name": "Ivan",
-      "email": "cewfwenb@mail.ru",
-      "password": "Nemezis1706",
-      "id": 3
+      "email": "ivandev@hg.ru",
+      "password": "Kdwqk2321dwq",
+      "id": 1
     }
   ],
   "products": [
