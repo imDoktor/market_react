@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FC } from "react"
+import React, { useEffect, FC } from "react"
 import { useNavigate } from "react-router-dom"
 import { observer } from "mobx-react-lite"
 import UserStore from "../../store/user"
@@ -6,7 +6,7 @@ import ProductsStore from "../../store/product"
 
 import { Wrapper, Title, Container, Bar } from "./HomePageStyled"
 import { ButtonText } from "../../components/buttons/ButtonText"
-import Card from "../../components/cards/Card"
+import Card from "../../components/cards/Card/Card"
 import Header from "../../components/main/Header"
 import UserName from "../../components/main/UserName"
 

@@ -1,24 +1,10 @@
-import React, { FC } from "react"
 import styled from "styled-components"
-
-export interface CardProps {
-  data: {
-    id: string
-    date: string
-    model: string
-    photo: any
-    price: string
-    description: string
-    color: string
-  }
-  width?: string
-}
 
 interface WrapperProps {
   width?: string
 }
 
-const Wrapper = styled.div<WrapperProps>`
+export const Wrapper = styled.div<WrapperProps>`
   margin: 0 0 30px 0;
   padding: 20px;
   width: ${({ width }) => width || "45%"};
@@ -49,7 +35,7 @@ export const Text = styled.p<TextProps>`
   }
 `
 
-const Photo = styled.div`
+export const Photo = styled.div`
   position: relative;
   margin: 30px 0 0 0;
   padding: 5px 0;
@@ -89,7 +75,7 @@ const Photo = styled.div`
     }
   }
 `
-const Description = styled.p`
+export const Description = styled.p`
   margin: 20px 0 0 0;
   height: 150px;
   font-size: 12px;
@@ -100,29 +86,3 @@ const Description = styled.p`
     height: auto;
   }
 `
-
-const Card: FC<CardProps> = ({ data, width }: CardProps) => {
-  return (
-    <Wrapper width={width}>
-      <Text margin="20px 0 0 0">
-        Дата: <span>{data.date}</span>
-      </Text>
-      <Text margin="20px 0 0 0">
-        Модель: <span>{data.model}</span>
-      </Text>
-      <Photo>
-        <img src={data.photo} alt="card_photo"></img>
-      </Photo>
-      <Text margin="20px 0 0 0">
-        <span>{data.price} ₽</span>
-      </Text>
-      <Text margin="20px 0 0 0">описание:</Text>
-      <Description>{data.description}</Description>
-      <Text margin="20px 0 0 0">
-        Цвет: <span>{data.color}</span>
-      </Text>
-    </Wrapper>
-  )
-}
-
-export default Card

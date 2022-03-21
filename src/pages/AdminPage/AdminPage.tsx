@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FC } from "react"
+import React, { useEffect, FC } from "react"
 import { useNavigate } from "react-router-dom"
 
 import UserStore from "../../store/user"
@@ -11,7 +11,7 @@ import { Wrapper, Bar } from "./AdminPageStyled"
 
 import Header from "../../components/main/Header"
 import UserName from "../../components/main/UserName"
-import EditableCard from "../../components/cards/EditableCard"
+import EditableCard from "../../components/cards/EditableCard/EditableCard"
 import ButtonIcon from "../../components/buttons/ButtonIcon"
 import { observer } from "mobx-react-lite"
 
