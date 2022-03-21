@@ -20,6 +20,10 @@ class AuthController {
     try {
       const users = await this.api.getUsers()
       const user = users.find((user: UserData) => user.email === data.email)
+      if (!user) {
+        this.errorHandler("не верный email или пароль")
+        return
+      }
       if (user.password === data.password) {
         User.setUserData(user)
         localStorage.setItem("id", user.id)
